@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor:default;
+    caret-color: rgba(0,0,0,0);
+    user-select: none;
+}
+
+html{ 
+    background: url(cover.jpeg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.navbar {
+    background-color: rgb(245, 245, 220);
+    overflow: hidden;
+    border-style:groove;
+    display:flex;
+    justify-content: center;
+    position:sticky;
+    top:0;
+  }
+  
+  .navbar a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.space{
+    width:20%;
+}
+
+  .navbar a:hover {
+    background-color: #009736;
+    color: #EE2A35;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  } 
+
+  .title{
+    display:flexbox;
+    color:black;
+    text-align:center;
+    margin-top: 10vh;
+
+  }
+
+  .title h1{
+    font-size:5vw;
+    background-color: #dddddd;
+    width:100%;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:1em;
+    padding: 2px 50px;
+    border-style:double;
+    font-family: 'Playfair Display', serif;
+    max-width:fit-content ;
+  }
+
+  .description{
+    margin-top:5vh;
+    width: fit-content;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    
+  }
+
+  .description h2{
+    background-color: #dddddd;
+    border-radius: 6px;
+    padding:0 20px;
+    border-style: double;
+  }
+
+  .introduction-motivations{
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+  }
+  .big {
+    font-size: 20px;
+    font-weight:bold;
+    padding: 2em 3em;
+    margin:0.1em;
+    border-radius:1em;
+    outline:none;
+    background:#dddddd;
+    cursor:pointer;
+    text-align:center;
+    border-style:double;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .big:hover{
+    background-color: #009736;
+    color: #EE2A35;
+  }
+
+  footer{
+    position: fixed;
+    left: 1.5vw;
+    bottom: 1vh;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    z-index: -999;
+    font-size:x-small;
+  }
+
+  .modal{
+    padding:1em;
+    max-width:50vw;
+    max-height:fit-content;  
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vh;
+    width:50vw;
+    padding-left:3em;
+    padding-right:3em;
+    border-radius:1em;
+
+    & > *{
+        margin:0 0 0.5rem 0;
+    }
+  }
+
+  .close-button{
+    font-size: 1em;
+    font-weight:bold;
+    padding: 0.5em 0.5em;
+    margin-top:2em;
+    border-radius:1em;
+    outline:none;
+    background:#ddddddab;
+    cursor:pointer;
+    text-align:center;
+    border-style:double;
+  }
+
+  .close-button:hover{
+    background-color: #009736;
+    color: #EE2A35;
+  }
+
+  .modal1{
+    padding:1em;
+    max-width:50vw;
+    max-height:fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vh;
+    width:50vw;
+    padding-left:3em;
+    padding-right:3em;
+    border-radius: 1em;
+    vertical-align: middle;
+
+    & > *{
+        margin:0 0 0.5rem 0;
+    }
+  }
+
+  .close-button1{
+    font-size: 1em;
+    font-weight:bold;
+    padding: 0.5em 0.5em;
+    margin-top:2em;
+    border-radius:1em;
+    outline:none;
+    background:#dddddd;
+    cursor:pointer;
+    text-align:center;
+    border-style:double;
+  }
+
+  .close-button1:hover{
+    background-color: #009736;
+    color: #EE2A35;
+  }
+
+  .title-dialog{
+    margin-bottom:1em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size:3em;
+    margin-top: 1vh;
+  }
+
+  .intro-motiv{
+    font-size:1.25em;
+    text-align:left;
+    text-indent:3em;
+    margin-bottom:1.8em;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .small{
+    font-size:small;
+    text-align:center;
+    text-indent:none;
+  }
+
+  .intro-motiv:last-of-type{
+    margin-bottom:.5em;
+  }
